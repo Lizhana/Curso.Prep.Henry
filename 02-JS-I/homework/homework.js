@@ -29,7 +29,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  return string ;
+  return str ;
 }
 
 function suma(x, y) {
@@ -42,7 +42,7 @@ function suma(x, y) {
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  return y - x ;
+  return (y - x );
 }
 
 function multiplica(x, y) {
@@ -103,19 +103,24 @@ function mayorQueCincuenta(num) {
   else {
     return false;
   }
-
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  
+  return x % y ;  
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
+  if ( num % 2 === 0 ) {
+    return true;
+  }
+    else {
+      return false;
+    }
   
 }
 
@@ -123,14 +128,19 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if ( num % 2 === 1) {
+    return true;
+  }
+  else {
+    return false ;
+  }
 }
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  
+  retun ( "num" * 2) ;
 }
 
 function elevarAlCubo(num) {
