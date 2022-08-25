@@ -42,7 +42,7 @@ function suma(x, y) {
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  return (y - x );
+  return y - x ;
 }
 
 function multiplica(x, y) {
@@ -61,7 +61,7 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if ( x === y) {
+  if  (x === y) {
     return true;
   }
   else {
@@ -73,12 +73,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if ( str1 ===str2) {
-    return true;
-  }
-    else {
-      return false;
-  }
+  return  str1 . longitud  ===  str2 . longitud ;
 }
 
 function menosQueNoventa(num) {
@@ -152,25 +147,32 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return  (num ^ exponent) ;
+  return Math.pow (num , exponent) ;
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  
+  // var resto = num % 1;
+  // var entero = num - resto;
+  // if (resto >= 0.5) {
+  // return entero + 1;
+  // } else {
+  // return entero;
+  // }
+  return  Math.round ( número ) ;
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  
+  return Math.ceil (num);
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  
+  return Math.random (0, 1);
 }
 
 function esPositivo(numero) {
