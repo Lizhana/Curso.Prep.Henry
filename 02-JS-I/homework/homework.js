@@ -42,7 +42,7 @@ function suma(x, y) {
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  return y - x ;
+  return (y - x) ;
 }
 
 function multiplica(x, y) {
@@ -73,7 +73,12 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  return  str1 . longitud  ===  str2 . longitud ;
+if  ( str1 === str2 ) {
+  return true;
+} 
+else {
+  return false;
+}
 }
 
 function menosQueNoventa(num) {
@@ -153,14 +158,8 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  // var resto = num % 1;
-  // var entero = num - resto;
-  // if (resto >= 0.5) {
-  // return entero + 1;
-  // } else {
-  // return entero;
-  // }
-  return  Math.round ( número ) ;
+  
+  return  Math.round ( num ) ;
 }
 
 function redondearHaciaArriba(num) {
